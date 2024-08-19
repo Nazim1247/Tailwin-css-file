@@ -20,13 +20,16 @@ crossorigin="anonymous"></script>
         extend: {
           colors: {
             clifford: '#da373d',
-          }
-        }
-      }
+          },
+          fontfamily: {
+            manrope: ['Manrope', 'sans-serif'],
+          },
+        },
+      },
     }
   </script>
 </head>
-<body>
+<body class="font-manrope">
     <!-- main content  -->
      <main class="max-w-screen-xl mx-auto px-16 lg:px-24">
         <!-- header section  -->
@@ -181,8 +184,46 @@ crossorigin="anonymous"></script>
                 </div>
             </section>
             <!-- new section homework -->
-
-
+             <section class="mb-16">
+                <!-- title  -->
+                 <div class="text-center">
+                    <h1 class="text-3xl md:text-4xl font-bold py-4">News & Events</h1>
+                    <p class="text-gray-500 max-w-xl mx-auto mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores veritatis voluptates qui culpa minus magni a adipisci molestiae, fugit rem repellendus, ab eaque dolorum eius magnam ipsam quas ea illum.</p>
+                 </div>
+                 <!-- grid card -->
+                  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                    <!-- card 1 -->
+                     <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
+                        <img class="mx-auto p-4" src="images/news-1.png" alt="">
+                        <div class="p-4">
+                            <p class="text-gray-500">f06 05 2027</p>
+                            <h3 class="text-2xl font-bold">collecting 8 points for discount</h3>
+                            <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, ducimus?</p>
+                            <p class="font-bold">Larn More</p>
+                        </div>
+                     </div>
+                    <!-- card 2 -->
+                     <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
+                        <img class="mx-auto p-4" src="images/news-1.png" alt="">
+                        <div class="p-4">
+                            <p class="text-gray-500">f06 05 2027</p>
+                            <h3 class="text-2xl font-bold">collecting 8 points for discount</h3>
+                            <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, ducimus?</p>
+                            <p class="font-bold">Larn More</p>
+                        </div>
+                     </div>
+                    <!-- card 3 -->
+                     <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
+                        <img class="mx-auto p-4" src="images/news-1.png" alt="">
+                        <div class="p-4">
+                            <p class="text-gray-500">f06 05 2027</p>
+                            <h3 class="text-2xl font-bold">collecting 8 points for discount</h3>
+                            <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, ducimus?</p>
+                            <p class="font-bold">Larn More</p>
+                        </div>
+                     </div>
+                  </div>
+             </section>
      </main>
      <!-- footer section  -->
       <footer class="bg-orange-100 text-gray-700 py-10 px-4 md:px-16">
