@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwindcss 2</title>
+    <!-- fontawesome -->
+    <script
+    src="https://kit.fontawesome.com/add6e03308.js"
+    crossorigin="anonymous"></script>
+    <!-- google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- tailwindcss and daisyui link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .poppins-thin {
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        }
+    </style>
+</head>
+<body class="poppins-thin max-w-[1280px] container mx-auto">
+    <!-- header start  -->
+     <header>
+        <!-- navbar -->
+        <div class="bg-base-100 shadow-sm px-6">
+            <div class="navbar justify-between container mx-auto">
+                <div class="navbar-start">
+                    <img class="w-[30%]" src="image-2/logo.svg" alt="">
+                  </div>
+                  <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 font-semibold">
+                      <li class="hover:text-green-400 hover:font-bold"><a>Home</a></li>
+                      <li class="hover:text-green-400 hover:font-bold"><a>Everything</a></li>
+                      <li class="hover:text-green-400 hover:font-bold"><a>Groceries</a></li>
+                      <li class="hover:text-green-400 hover:font-bold"><a>About</a></li>
+                      <li class="hover:text-green-400 hover:font-bold"><a>Contact</a></li>
+                    </ul>
+                  </div>
+                  <div class="navbar-end">
+                        <div class="flex space-x-5 items-center">
+                          <p class="text-lime-600 font-bold">$10.00</p>
+                          <i class="fa-solid fa-cart-arrow-down text-lime-500"></i>
+                          <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="dropdown dropdown-end">
+                          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                              <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="h-5 w-5"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor">
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                          </div>
+                          <ul
+                            tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow font-semibold">
+                            <li class="hover:text-green-400 hover:font-bold"><a>Home</a></li>
+                          <li class="hover:text-green-400 hover:font-bold"><a>Everything</a></li>
+                          <li class="hover:text-green-400 hover:font-bold"><a>Groceries</a></li>
+                          <li class="hover:text-green-400 hover:font-bold"><a>About</a></li>
+                          <li class="hover:text-green-400 hover:font-bold"><a>Contact</a></li>
+                          </ul>
+                        </div>
+            </div>
+          </div>
+        </div>
+        <!-- banner -->
+          <div class="px-6 bg-[url(image-2/leaf01.png)] bg-no-repeat bg-right-bottom bg-center bg-[length:700px_600px] bg-opacity-green/10">
+            <!-- img  -->
+            <div class="lg:flex items-center container mx-auto gap-5 py-24">
+              <div class="w-[100%]">
+                <img class="w-full" src="image-2/bannerbg.png" alt="">
+            </div>
+            <!-- text  -->
+            <div class="w-[100%] space-y-5">
+                <h3 class="text-2xl font-bold">Best Quality Products</h3>
+                <h1 class="text-6xl font-extrabold leading-tight">Join The Organic Movement</h1>
+                <p class="font-semibold text-gray-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam facere ipsa placeat odit ipsum, cum eaque sint error nesciunt labore. </p>
+                <button class="text-white font-extrabold text-xl bg-lime-400 rounded-md py-4 px-8 hover:bg-lime-600"><i class="fa-solid fa-cart-arrow-down mr-2"></i> Shop Now</button>
+            </div>
+            </div>
+           </div>
+     </header>
+     <!-- main start  -->
+     <main>
+      <!-- section 1 -->
+      <section class="bg-black px-6">
+        <div class="container mx-auto grid grid-cols-1 lg:grid-cols-4 gap-5 py-24">
+          <!-- card 1 -->
+         <div class="flex p-8 bg-gray-600 gap-6">
+          <i class="fa-solid fa-truck text-lime-500 text-5xl"></i>
+          <div class="text-white space-y-3">
+            <h3 class="text-2xl font-bold">Free Shipping</h3>
+            <p class="font-semibold">Above $5 Only</p>
+         </div>
+          </div>
+          <!-- card 2 -->
+         <div class="flex p-8 bg-gray-600 gap-5">
+          <i class="fa-solid fa-certificate text-lime-500 text-5xl"></i>
+          <div class="text-white space-y-3">
+            <h3 class="text-2xl font-bold">Certified Organic</h3>
+            <p class="font-semibold">100% Organic</p>
+         </div>
+          </div>
+          <!-- card 3 -->
+         <div class="flex p-8 bg-gray-600 gap-5">
+          <i class="fa-solid fa-piggy-bank text-lime-500 text-5xl"></i>
+          <div class="text-white space-y-3">
+            <h3 class="text-2xl font-bold">Huge Savings</h3>
+            <p class="font-semibold">At Lowest Price</p>
+         </div>
+          </div>
+          <!-- card 4 -->
+         <div class="flex p-8 bg-gray-600 gap-5">
+          <i class="fa-solid fa-rotate text-lime-500 text-5xl"></i>
+          <div class="text-white space-y-3">
+            <h3 class="text-2xl font-bold">Easy Returns</h3>
+            <p class="font-semibold">No Questions Asked</p>
+         </div>
+          </div>
+        </div>
+      </section>
+      <!-- section 2 -->
+       <section>
+        <div
+  class="hero py-24"
+  style="background-image:url(image-2/call.jpg);">
+  <div class=" bg-opacity-90"></div>
+  <div class="hero-content text-neutral-content text-center">
+    <div class="max-w-xl">
+      <h1 class="mb-5 text-5xl text-white font-bold">Insert A call to action</h1>
+      <p class="mb-5 text-lg text-white font-semibold max-w-md container mx-auto">
+        think of what you want your visitors to do next maybe they should contact you?
+      </p>
+      <button class="btn btn-outline font-bold text-white hover:bg-lime-600 hover:border-none">Get In Touch</button>
+    </div>
+  </div>
+</div>
+       </section>
+       <!-- section 3 -->
+        <section class="bg-stone-100 px-6">
+          <div class="container mx-auto">
+            <h3 class="text-5xl font-bold text-center pt-24">Best Selling Products</h3>
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 py-24">
+              <!-- card 1 -->
+              <div class="card bg-base-100 shadow-xl rounded-md">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="image-2/product01.jpg"
+                    alt="Shoes"
+                    class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h3 class="font-semibold text-gray-400">Groceries</h3>
+                  <h2 class="card-title">Assorted Coffee</h2>
+                  <div class="flex text-yellow-500 space-x-2">
+                    <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="font-semibold">$35.00</p>
+                  <div class="card-actions">
+                    <button class="text-white font-extrabold text-sm bg-lime-400 rounded-md py-4 px-8 hover:bg-lime-600">Shop Now <i class="fa-solid fa-cart-arrow-down ml-2"></i></button>
+                  </div>
+                </div>
+              </div>
+              <!-- card 2 -->
+              <div class="card bg-base-100 shadow-xl rounded-md">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="image-2/product02.jpg"
+                    alt="Shoes"
+                    class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h3 class="font-semibold text-gray-400">Groceries</h3>
+                  <h2 class="card-title">Assorted Coffee</h2>
+                  <div class="flex text-yellow-500 space-x-2">
+                    <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="font-semibold">$35.00</p>
+                  <div class="card-actions">
+                    <button class="text-white font-extrabold text-sm bg-lime-400 rounded-md py-4 px-8 hover:bg-lime-600">Shop Now <i class="fa-solid fa-cart-arrow-down ml-2"></i></button>
+                  </div>
+                </div>
+              </div>
+              <!-- card 3 -->
+              <div class="card bg-base-100 shadow-xl rounded-md">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="image-2/product03.jpg"
+                    alt="Shoes"
+                    class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h3 class="font-semibold text-gray-400">Groceries</h3>
+                  <h2 class="card-title">Assorted Coffee</h2>
+                  <div class="flex text-yellow-500 space-x-2">
+                    <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="font-semibold">$35.00</p>
+                  <div class="card-actions">
+                    <button class="text-white font-extrabold text-sm bg-lime-400 rounded-md py-4 px-8 hover:bg-lime-600">Shop Now <i class="fa-solid fa-cart-arrow-down ml-2"></i></button>
+                  </div>
+                </div>
+              </div>
+              <!-- card 4 -->
+              <div class="card bg-base-100 shadow-xl rounded-md">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="image-2/product04.jpg"
+                    alt="Shoes"
+                    class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h3 class="font-semibold text-gray-400">Groceries</h3>
+                  <h2 class="card-title">Assorted Coffee</h2>
+                  <div class="flex text-yellow-500 space-x-2">
+                    <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="font-semibold">$35.00</p>
+                  <div class="card-actions">
+                    <button class="text-white font-extrabold text-sm bg-lime-400 rounded-md py-4 px-8 hover:bg-lime-600">Shop Now <i class="fa-solid fa-cart-arrow-down ml-2"></i></button>
+                  </div>
+                </div>
+              </div>
+              <!-- card 5 -->
+              <div class="card bg-base-100 shadow-xl rounded-md">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="image-2/product05.jpg"
+                    alt="Shoes"
+                    class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h3 class="font-semibold text-gray-400">Groceries</h3>
+                  <h2 class="card-title">Assorted Coffee</h2>
+                  <div class="flex text-yellow-500 space-x-2">
+                    <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="font-semibold">$35.00</p>
+                  <div class="card-actions">
+                    <button class="text-white font-extrabold text-sm bg-lime-400 rounded-md py-4 px-8 hover:bg-lime-600">Shop Now <i class="fa-solid fa-cart-arrow-down ml-2"></i></button>
+                  </div>
+                </div>
+              </div>
+              <!-- card 6 -->
+              <div class="card bg-base-100 shadow-xl rounded-md">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="image-2/product06.jpg"
+                    alt="Shoes"
+                    class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h3 class="font-semibold text-gray-400">Groceries</h3>
+                  <h2 class="card-title">Assorted Coffee</h2>
+                  <div class="flex text-yellow-500 space-x-2">
+                    <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="font-semibold">$35.00</p>
+                  <div class="card-actions">
+                    <button class="text-white font-extrabold text-sm bg-lime-400 rounded-md py-4 px-8 hover:bg-lime-600">Shop Now <i class="fa-solid fa-cart-arrow-down ml-2"></i></button>
+                  </div>
+                </div>
+              </div>
+              <!-- card 7 -->
+              <div class="card bg-base-100 shadow-xl rounded-md">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="image-2/product07.jpg"
+                    alt="Shoes"
+                    class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h3 class="font-semibold text-gray-400">Groceries</h3>
+                  <h2 class="card-title">Assorted Coffee</h2>
+                  <div class="flex text-yellow-500 space-x-2">
+                    <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="font-semibold">$35.00</p>
+                  <div class="card-actions">
+                    <button class="text-white font-extrabold text-sm bg-lime-400 rounded-md py-4 px-8 hover:bg-lime-600">Shop Now <i class="fa-solid fa-cart-arrow-down ml-2"></i></button>
+                  </div>
+                </div>
+              </div>
+              <!-- card 8 -->
+              <div class="card bg-base-100 shadow-xl rounded-md">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="image-2/product08.jpg"
+                    alt="Shoes"
+                    class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h3 class="font-semibold text-gray-400">Groceries</h3>
+                  <h2 class="card-title">Assorted Coffee</h2>
+                  <div class="flex text-yellow-500 space-x-2">
+                    <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="font-semibold">$35.00</p>
+                  <div class="card-actions">
+                    <button class="text-white font-extrabold text-sm bg-lime-400 rounded-md py-4 px-8 hover:bg-lime-600">Shop Now <i class="fa-solid fa-cart-arrow-down ml-2"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- section 4 -->
+         <section>
+          <div class="bg-base-50 py-12 container mx-auto">
+            <div class="grid grid-cols-2 lg:grid-cols-6 items-center">
+              <h3 class="text-2xl lg:text-lg font-extrabold col-span-2 lg:col-span-1 text-center">Featured Brands:
+              </h3>
+              <img src="image-2/logo-1.svg" alt="">
+            <img src="image-2/logo-2.svg" alt="">
+            <img src="image-2/logo-3.svg" alt="">
+            <img src="image-2/logo-4.svg" alt="">
+              <img class="hidden lg:flex" src="image-2/logo-5.svg" alt="">
+            </div>
+            <img class="container mx-auto w-[40%] lg:hidden" src="image-2/logo-5.svg" alt="">
+          </div>
+         </section>
+     </main>
+</body>
+</html>
